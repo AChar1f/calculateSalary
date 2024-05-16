@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightgreen;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 70vh;
+}
+
+form {
+    display: grid;
+    gap: .5rem;
+    margin-top: 20px;
+
+}
