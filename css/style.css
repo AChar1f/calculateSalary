@@ -15,8 +15,54 @@ body {
 }
 
 form {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: .5rem;
     margin-top: 20px;
 
+}
+
+.salaryInfo {
+    display: flex;
+    flex-flow: column;
+    gap: 0.3rem;
+}
+
+.mname{
+    width: 10rem;
+    height: 1.5rem;
+    margin-inline: 2.35rem;
+}
+
+.age { 
+    width: 4rem;
+    margin-inline: 5.2rem;
+}
+
+.greeting {
+    margin-inline: 5rem;
+}
+
+.calender {
+    margin-inline: 4.5rem;
+}
+
+.gender {
+    display: flex;
+    justify-content: space-between;
+}
+
+.output {
+    height: 3rem;
+}
+
+.formButtons {
+    display: flex;
+    justify-content: space-between;
+    height: 2.5rem;
+}
+
+.calcButton {
+    align-self: center;
+    width: 6rem;
 }

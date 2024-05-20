@@ -9,23 +9,67 @@
 <body>
 
 <form>
-    <label>Title<select>
-        <option>Mr.</option>
-        <option>Mrs.</option>
-        <option>Ms.</option>
-        <option>Dr.</option>
-    </select></label>
-<label>First Name<input type="text" required></label>
-<label>Last Name<input type="text" required></label>
-<label>Age<input type="number"required></label>
-<label>Date of Birth<input type="date"></label>
-<label for="Male"><input type="radio" name="male-female" required>Male</label>
-<label for="Female"><input type="radio" name="male-female" required>Female</label> 
-<label for="employment"><input type="checkbox" value="working">Are you employed?</label>
-<label>Salary:<input type="number" required></label>
-<label output></label>
-<button>Calculate</button>
-<button type="reset">clear</button>
+    <h2>Enter the Required information</h2>
+    <div class="socialtitle">
+        <label>Title
+            <select class="greeting">
+                <option>Mr.</option>
+                <option>Mrs.</option>
+                <option>Ms.</option>
+                <option>Dr.</option>
+            </select>
+        </label>
+    </div>
+<div class="inames">
+    <label>First Name<input type="text" required class="mname"></label>
+    <label>Last Name<input type="text" required class="mname"></label>
+</div>    
+<div class="age-dob">
+    <label>Age<input type="number"required class="age"></label>
+    <label>Date of Birth<input type="date" class="calender"></label>
+</div>
+<div class="gender">
+    <label>Gender:</label>
+    <label for="Male"><input type="radio" name="male-female" required>Male</label>
+    <label for="Female"><input type="radio" name="male-female" required>Female</label> 
+
+</div>
+<div class="subjectContainer">
+    <label for="subjects">Subjects:</label>
+    <label>HTML
+        <input type="checkbox">
+    </label>
+    <label>CSS
+        <input type="checkbox">
+    </label>
+    <label>Bootstrap
+        <input type="checkbox">
+    </label>
+    <label>JavaScript
+        <input type="checkbox">
+    </label>
+    <label>VueJS
+        <input type="checkbox">
+    </label>
+</div>
+<div class="salaryInfo">
+    <label for="employment">Are you employed? 
+        <label>Yes <input type="radio" id="yes" name="yes-no"></label>
+        <label>No <input type="radio" checked id="no" name="yes-no"></label>
+    </label>
+    
+    <label>Hourly Rate:</label>
+    <input type="number" id="sal" required>
+    <label>Hours Worked:</label>
+    <input type="number" id="hrs" required>
+    <input type="text" readonly placeholder="0" id="SalaryWindow" class="output" data-entry>
+    <button type="button" class="calcButton" onclick="calcsal()" ans>Calculate</button>
+    <label id="Out"></label>
+</div>
+<div class="formButtons">
+    <button type="submit">Submit</button>
+    <button type="reset">clear</button>
+</div>
 
 </form>
 
