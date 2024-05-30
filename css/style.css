@@ -22,7 +22,17 @@ form {
 
 }
 
-.salaryInfo {
+.socialTitle {
+    display: flex;
+    flex-direction: column;
+    
+
+}
+h2{
+    text-align: center;
+}
+
+.employmentInfo {
     display: flex;
     flex-flow: column;
     gap: 0.3rem;
@@ -65,4 +75,9 @@ form {
 .calcButton {
     align-self: center;
     width: 6rem;
+}
+salaryInfo {
+    display: flex;
+    flex-flow: column;
+    gap: 0.3rem;
 }
